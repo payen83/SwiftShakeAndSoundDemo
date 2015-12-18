@@ -21,6 +21,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         
         myLabel.text = "It's Shaking!!"
+        print("Motion Gesture Successful!")
         
         do {
             try playSound("shakesound", fileExtension: "wav")
